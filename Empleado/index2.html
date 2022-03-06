@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Paris-Brest</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper nav-color">
+            <a href="#" class="brand-logo"><img src="../img/logo pasteleria.png" width="13%" height="13%"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Pedidos</a></li>
+                <li><a href="index.html">Inventario</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Inventario</h1>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#inbox">Sabores</a></li>
+                    <li class="tab col s3"><a href="#unread">Adornos</a></li>
+                </ul>
+            </div>
+            <div id="inbox" class="col s12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Folio</th>
+                            <th>Nombre</th>
+                            <th>Cantidad kg</th>
+                            <th>Fecha de caducidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Fresa</td>
+                            <td>10</td>
+                            <td>
+                                <a class="waves-effect waves-light btn  teal lighten-4 modal-trigger" href="#demo-modal1"><i class="large material-icons">date_range</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td>Chocolate</td>
+                            <td>15</td>
+                            <td>
+                                <a class="waves-effect waves-light btn  teal lighten-4 modal-trigger" href="#demo-modal2"><i class="large material-icons">date_range</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>125</td>
+                            <td>Vainilla</td>
+                            <td>8</td>
+                            <td>
+                                <a class="waves-effect waves-light btn  teal lighten-4 modal-trigger" href="#demo-modal3"><i class="large material-icons">date_range</i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="unread" class="col s12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Folio</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Fresa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td>Chocolate</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>125</td>
+                            <td>Vainilla</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: 8%;" class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-4"><b style="color: white;">Ubicanos</b> en Rio Conchos #310</p>
+                    <p class="grey-text text-lighten-4"><b style="color: white;">Telefono:</b> 4772021084</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Horario de atención</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Lunes a viernes de 8:00 a.m. a 10:00 p.m.</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Sabados y domingod de 10:00 a.m. a 07:00
+                                p.m.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 Programamichi
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Structure -->
+
+    <div id="demo-modal1" class="modal">
+        <div class="modal-content">
+            <h4>Lotes</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lote</th>
+                                        <th>Fecha de caducidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>232</td>
+                                        <td>15/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>233</td>
+                                        <td>20/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>234</td>
+                                        <td>25/03/2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cerrar</a>
+
+        </div>
+    </div>
+    <!-- Modal Structure -->
+
+    <div id="demo-modal2" class="modal">
+        <div class="modal-content">
+            <h4>Lotes</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lote</th>
+                                        <th>Fecha de caducidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>232</td>
+                                        <td>15/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>233</td>
+                                        <td>20/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>234</td>
+                                        <td>25/03/2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cerrar</a>
+
+        </div>
+    </div>
+    <!-- Modal Structure -->
+
+    <div id="demo-modal3" class="modal">
+        <div class="modal-content">
+            <h4>Lotes</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lote</th>
+                                        <th>Fecha de caducidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>232</td>
+                                        <td>15/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>233</td>
+                                        <td>20/03/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>234</td>
+                                        <td>25/03/2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cerrar</a>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.modal').modal();
+
+        })
+
+        let array_pastel = []
+        let array_adorno = []
+
+        function mostrarPasteles() {
+            str = ''
+            str1 = ''
+            if (array_pastel != "") {
+                for (var i = 0; i < array_pastel.length; i++) {
+                    str += '<tr>' +
+                        '<td>' + array_pastel[i].pastel + '</td>' +
+                        '<td>' + " Fresa, chocolate" + '</td>' +
+                        '<td>' + array_pastel[i].costo + '</td>' +
+                        '</tr>';
+                }
+            } else {
+                str = '<td></td>';
+            }
+            console.log(str);
+            $('#tb_pasteles').html(str);
+            if (array_adorno != "") {
+                for (var i = 0; i < array_adorno.length; i++) {
+                    str1 += '<tr>' +
+                        '<td>' + array_adorno[i].pastel + '</td>' +
+                        '<td>' + array_adorno[i].costo + '</td>' +
+                        '</tr>';
+                }
+            } else {
+                str1 = '<td></td>';
+            }
+            $('#tb_adorno').html(str1);
+        }
+
+        function agregarPastel1() {
+            var pastel = $('#txt_pastel1').text()
+            var costo = $('#txt_precio1').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel2() {
+            var pastel = $('#txt_pastel2').text()
+            var costo = $('#txt_precio2').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel3() {
+            var pastel = $('#txt_pastel3').text()
+            var costo = $('#txt_precio3').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel4() {
+            var pastel = $('#txt_pastel4').text()
+            var costo = $('#txt_precio4').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel5() {
+            var pastel = $('#txt_pastel5').text()
+            var costo = $('#txt_precio5').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel6() {
+            var pastel = $('#txt_pastel6').text()
+            var costo = $('#txt_precio6').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarAdronos1() {
+            var pastel = $('#txt_adorno1').text()
+            var costo = $('#txt_precio_adorno_1').text()
+
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos2() {
+            var pastel = $('#txt_adorno2').text()
+            var costo = $('#txt_precio_adorno_2').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos3() {
+            var pastel = $('#txt_adorno3').text()
+            var costo = $('#txt_precio_adorno_3').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos4() {
+            var pastel = $('#txt_adorno4').text()
+            var costo = $('#txt_precio_adorno_4').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos5() {
+            var pastel = $('#txt_adorno5').text()
+            var costo = $('#txt_precio_adorno_5').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos6() {
+            var pastel = $('#txt_adorno6').text()
+            var costo = $('#txt_precio_adorno_6').text()
+            console.log(costo);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+    </script>
+</body>
+
+</html>

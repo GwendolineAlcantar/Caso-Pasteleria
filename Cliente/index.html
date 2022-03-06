@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Paris-Brest</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper nav-color">
+            <a href="#" class="brand-logo"><img src="../img/logo pasteleria.png" width="13%" height="13%"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Pasteles</h1>
+        <a onclick="mostrarPasteles()" style="float: right;" class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal"><i
+                class="large material-icons">add_shopping_cart</i></a>
+        <div class="row">
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel1.jpg">
+                                <a onclick="agregarPastel1()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel1" class="card-title">Pastel unicornio</span>
+                                <p>Pastel de unicornio. Favor de seleccionar el sabor</p>
+                                <b id="txt_precio1">$800</b>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel5.jpg">
+                                <a onclick="agregarPastel2()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel2" class="card-title">Pastel elegante</span>
+                                <p>Pastel elegante. Favor de seleccionar el sabor</p>
+                                <b id="txt_precio2">$550</b>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel6.jpg">
+                                <a onclick="agregarPastel3()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel3" class="card-title">Pastel estelear</span>
+                                <p>Pastel de estelar. Favor de seleccionar</p>
+                                <b id="txt_precio3">$550</b>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel4.jpg">
+                                <a onclick="agregarPastel4()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel4" class="card-title">Pastel rosas</span>
+                                <p>Pastel de rosas. Favor de seleccionar</p>
+                                <b id="txt_precio4">$550</b>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel3.png">
+                                <a onclick="agregarPastel5()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel5" class="card-title">Pastel arcoiris</span>
+                                <p>Pastel de arcoiris. Favor de seleccionar</p>
+                                <b id="txt_precio5">$800</b>
+
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/pastel2.png">
+                                <a onclick="agregarPastel6()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_pastel6" class="card-title">Pastel alegria</span>
+                                <p>Pastel de alegria. Favor de seleccionar</p>
+                                <b id="txt_precio6">$550</b>
+
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input name="Fresa" value="Fresa" type="checkbox" />
+                                            <span>Fresa</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="Chocolate" value="Chocolate" type="checkbox" />
+                                            <span>Chocolate</span>
+                                        </label>
+                                    </p>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Adornos</h1>
+        <div class="row">
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno1.jpg">
+                                <a onclick="agregarAdronos1()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno1" class="card-title">Adorno cielo</span>
+                                <p>Adorno cielo. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_1">$250</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno2.jpg">
+                                <a onclick="agregarAdronos2()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno2" class="card-title">Adorno harry potter</span>
+                                <p>Adorno harry potter. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_2">$150</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno6.jpg">
+                                <a onclick="agregarAdronos3()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno3" class="card-title">Adorno bodas</span>
+                                <p>Adorno bodas. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_3">$150</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno3.jpg">
+                                <a onclick="agregarAdronos4()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno4" class="card-title">Adorno infantil</span>
+                                <p>Adorno infantil. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_4">$250</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno5.jpg">
+                                <a onclick="agregarAdronos5()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno5" class="card-title">Adorno anillos bodas</span>
+                                <p>Adorno anillos bodas. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_6">$250</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col 12 m4">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../img/adorno4.jpg">
+                                <a onclick="agregarAdronos6()" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">+</i></a>
+                            </div>
+                            <div class="card-content">
+                                <span id="txt_adorno6" class="card-title">Adorno aves</span>
+                                <p>Adorno aves. Favor de seleccionar</p>
+                                <b id="txt_precio_adorno_6">$150</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-4"><b style="color: white;">Ubicanos</b> en Rio Conchos #310</p>
+                    <p class="grey-text text-lighten-4"><b style="color: white;">Telefono:</b> 4772021084</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Horario de atención</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Lunes a viernes de 8:00 a.m. a 10:00 p.m.</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Sabados y domingod de 10:00 a.m. a 07:00
+                                p.m.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 Programamichi
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <h4>Pedido</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Nombre</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Teléfono</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Correo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Pasteles</th>
+                                        <th>Sabor</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tb_pasteles">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Adorno</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tb_adorno">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cerrar</a>
+            <a href="#!" class="modal-action waves-effect waves-green btn green lighten-1">Aceptar</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.modal').modal();
+
+        })
+
+        let array_pastel = []
+        let array_adorno = []
+
+        function mostrarPasteles() {
+            str = ''
+            str1 = ''
+            if (array_pastel != "") {
+                for (var i = 0; i < array_pastel.length; i++) {
+                    str += '<tr>' +
+                        '<td>' + array_pastel[i].pastel + '</td>' +
+                        '<td>' + " Fresa, chocolate" + '</td>' +
+                        '<td>' + array_pastel[i].costo + '</td>' +
+                        '</tr>';
+                }
+            } else {
+                str = '<td></td>';
+            }
+            console.log(str);
+            $('#tb_pasteles').html(str);
+            if (array_adorno != "") {
+                for (var i = 0; i < array_adorno.length; i++) {
+                    str1 += '<tr>' +
+                        '<td>' + array_adorno[i].pastel + '</td>' +
+                        '<td>' + array_adorno[i].costo + '</td>' +
+                        '</tr>';
+                }
+            } else {
+                str1 = '<td></td>';
+            }
+            $('#tb_adorno').html(str1);
+        }
+
+        function agregarPastel1() {
+            var pastel = $('#txt_pastel1').text()
+            var costo = $('#txt_precio1').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel2() {
+            var pastel = $('#txt_pastel2').text()
+            var costo = $('#txt_precio2').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel3() {
+            var pastel = $('#txt_pastel3').text()
+            var costo = $('#txt_precio3').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel4() {
+            var pastel = $('#txt_pastel4').text()
+            var costo = $('#txt_precio4').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel5() {
+            var pastel = $('#txt_pastel5').text()
+            var costo = $('#txt_precio5').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarPastel6() {
+            var pastel = $('#txt_pastel6').text()
+            var costo = $('#txt_precio6').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_pastel.push(pasteles)
+        }
+
+        function agregarAdronos1() {
+            var pastel = $('#txt_adorno1').text()
+            var costo = $('#txt_precio_adorno_1').text()
+
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos2() {
+            var pastel = $('#txt_adorno2').text()
+            var costo = $('#txt_precio_adorno_2').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos3() {
+            var pastel = $('#txt_adorno3').text()
+            var costo = $('#txt_precio_adorno_3').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos4() {
+            var pastel = $('#txt_adorno4').text()
+            var costo = $('#txt_precio_adorno_4').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos5() {
+            var pastel = $('#txt_adorno5').text()
+            var costo = $('#txt_precio_adorno_5').text()
+            console.log(pastel);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+
+        function agregarAdronos6() {
+            var pastel = $('#txt_adorno6').text()
+            var costo = $('#txt_precio_adorno_6').text()
+            console.log(costo);
+            var pasteles = {
+                pastel: pastel,
+                costo: costo
+            }
+            array_adorno.push(pasteles)
+        }
+    </script>
+</body>
+
+</html>
